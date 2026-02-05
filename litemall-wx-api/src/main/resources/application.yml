@@ -3,6 +3,11 @@ spring:
     active: db, core, wx
   messages:
     encoding: UTF-8
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  main:
+    allow-circular-references: true
 
 server:
   port: 8082
