@@ -3,8 +3,8 @@ package org.linlinjava.litemall.core;
 import com.google.common.primitives.Ints;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+
 import org.linlinjava.litemall.core.task.Task;
 import org.linlinjava.litemall.core.task.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +15,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.env.Environment;
 import org.springframework.core.task.SyncTaskExecutor;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.junit4.SpringRunner;
+
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.time.LocalDateTime;
@@ -26,8 +25,7 @@ import java.util.concurrent.Delayed;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
-@WebAppConfiguration
-@RunWith(SpringRunner.class)
+
 @SpringBootTest
 public class TaskTest {
     private final Log logger = LogFactory.getLog(TaskTest.class);

@@ -1,6 +1,6 @@
 package org.linlinjava.litemall.core;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class IntegerTest {
     @Test

@@ -1,7 +1,7 @@
 package org.linlinjava.litemall.core;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+
 import org.linlinjava.litemall.core.notify.NotifyService;
 import org.linlinjava.litemall.core.notify.NotifyType;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.task.SyncTaskExecutor;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.junit4.SpringRunner;
+
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.util.concurrent.Executor;
@@ -28,8 +27,7 @@ import java.util.concurrent.Executor;
  * 2. 在腾讯云短信平台设置短信签名和短信模板
  * 3. 在当前测试类设置好正确的手机号码
  */
-@WebAppConfiguration
-@RunWith(SpringRunner.class)
+
 @SpringBootTest
 public class SmsTest {
 
