@@ -9,10 +9,8 @@ import org.linlinjava.litemall.core.express.dao.ExpressInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import org.springframework.test.context.web.WebAppConfiguration;
 
-
-@SpringBootTest(classes = Application.class)
+@SpringBootTest(classes = TestApplication.class)
 public class ExpressTest {
 
     private final Log logger = LogFactory.getLog(ExpressTest.class);

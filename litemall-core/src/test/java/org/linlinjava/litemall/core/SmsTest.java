@@ -12,8 +12,6 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.task.SyncTaskExecutor;
 
-import org.springframework.test.context.web.WebAppConfiguration;
-
 import java.util.concurrent.Executor;
 
 /**
@@ -67,7 +65,7 @@ public class SmsTest {
     }
 
     @Configuration
-    @Import(Application.class)
+    @Import(TestApplication.class)
     static class ContextConfiguration {
         @Bean
         @Primary
