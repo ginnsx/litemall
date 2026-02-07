@@ -12,14 +12,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan("org.linlinjava.litemall.db.dao")
 @EnableTransactionManagement
 @EnableScheduling
-public class Application extends SpringBootServletInitializer {
+public class WarApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(WarApplication.class, args);
     }
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(Application.class);
+        return builder.sources(WarApplication.class);
     }
 }

@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = {"org.linlinjava.litemall.db"})
 @MapperScan("org.linlinjava.litemall.db.dao")
-public class Application {
+public class DbApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(DbApplication.class, args);
     }
 
 }
